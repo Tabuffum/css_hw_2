@@ -1,0 +1,116 @@
+/*The header will display a box at the top of the website showing a caption
+for the website*/
+header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 600px;
+	background-color: cornsilk;
+	margin: 15px auto;
+	padding: 15px 25px;
+	border: 10px solid purple;
+}
+/*The footer will display a box at the bottom of the website showing the
+website developer with an image.*/
+footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 50.0%;
+	width: 300px;
+	background-color: cornsilk;
+	margin: 15px auto;
+	padding: 15px 25px;
+    border: 10px solid purple;
+    
+}
+/*In order to understand the DIV selector a box is created for the Spring 
+part of the website only.*/
+div {
+    text-align:center;
+    width: 300px;
+    border: 15px solid green;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 50px;
+    margin: 20px;
+    font-size: 2em;
+    color:green;
+    padding:1em;
+    position:relative;
+    margin-left:250px;
+  }
+/*This the design for the H1 selector for the caption box text*/
+h1 {
+	font-size: 220%;
+    color:plum;
+    text-align: center;
+	text-shadow: 2px 2px 0 black;
+    margin-bottom: .25em; }
+  
+/*ID #1 This was tricky. This sets up a CSS rule which will apply to the
+unique id = fall. The interesting part is that it uses the pseudo
+element ::first-letter to style the first letter when the id is referred
+in the HTML code.*/
+#fall::first-letter {
+    font-weight: bold; 
+    color:saddlebrown;
+    font-size: 250%;
+}
+/*ID #2 Same comment as above for fall except this is for the unique id = winter.*/
+#winter::first-letter {
+    font-weight: bold; 
+    color:darkblue;
+    font-size: 250%;   } 
+
+/*Class #1 This establishes a class called spring which styles the text for the
+spring paragraph.*/
+p.spring {
+    text-align: left; 
+    background:honeydew;
+    color:black;
+    text-shadow: 2px 2px yellow;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-style:italic}
+  
+/* ID #3 Same comment as above for fall except this is for the unique id = spring.*/
+ #spring::first-letter{
+      color:darkkhaki;
+      font-size: 250%;
+      font-style: italic;     
+  }  
+
+  /*Class #2 This establishs a class called summer which styles the text for the
+summer paragraph.*/
+p.summer {
+    text-align: left; 
+    background:rgb(207, 247, 207);
+    color:green;
+    font-family:fantasy;
+    font-size: 100%;
+    font-style: normal;}
+  
+/*ID #4 Same comment as above for fall except this is for the unique id = summer.*/
+ #summer::first-letter{
+      color:lightseagreen;
+      font-size: 250%;
+      font-style: italic;     
+  }  
+
+  /*Class #3 Sets up an unordered list style.*/
+  ul.seasons {
+    list-style-type: square;
+    font-size: 2em;
+    color:red;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    margin-top: 0em;
+  }
+  /*ID #5 Sets up design to make the first line of the conclusion
+  stand out from the rest of the paragraph*/
+ #bestseason::first-line{
+    color:saddlebrown;
+    font-size: 220%;
+    font-style: italic;
+    font-weight: bold;
+    text-align:center;     
+}  
